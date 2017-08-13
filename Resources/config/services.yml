@@ -1,0 +1,16 @@
+services:
+    bvisonl.log.doctrine.listener:
+        class: Bvisonl\LogBundle\EventListener\DoctrineEventSubscriber
+        arguments: ["@service_container"]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+
+    bvisonl.kernel.listener.kernelexception:
+        class: Bvisonl\LogBundle\EventListener\KernelExceptionListener
+        arguments: ["@service_container"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+    bvisonl.logger:
+        class: Bvisonl\LogBundle\Services\Logger
+        arguments: ["@service_container"]

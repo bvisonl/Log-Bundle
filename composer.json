@@ -1,0 +1,25 @@
+{
+    "name": "bvisonl/log-bundle",
+    "description": "Symfony2 Bundle to log events to a database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Vison",
+            "email": "bvisonl@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.0",
+        "symfony/framework-bundle": "^2.8",
+        "symfony/security-bundle": "^2.8",
+        "doctrine/doctrine-bundle": "~1.4",
+        "jms/serializer-bundle": "^1.1",
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Bvisonl\\LogBundle\\": ""
+        }    
+    }
+}
