@@ -1,2 +1,2 @@
 # Log-Bundle
-Symfony2 Bundle to log events to a database
+Documentation will be available soon.

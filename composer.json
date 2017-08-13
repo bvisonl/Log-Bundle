@@ -14,8 +14,7 @@
         "symfony/framework-bundle": "^2.8",
         "symfony/security-bundle": "^2.8",
         "doctrine/doctrine-bundle": "~1.4",
-        "jms/serializer-bundle": "^1.1",
-
+        "jms/serializer-bundle": "^1.1"
     },
     "autoload": {
         "psr-4": {
